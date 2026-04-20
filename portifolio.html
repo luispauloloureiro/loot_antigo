@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loot Antigo | Documentação Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap');
+        body {
+            background-color: #1E140A;
+            color: #F4EBD0;
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .bg-tavern {
+            background-image: linear-gradient(rgba(30,20,10,0.85), rgba(30,20,10,0.85)), url('https://images.unsplash.com/photo-1614294149010-950b698f72c0?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: #D4AF37;
+        }
+        .glass-panel {
+            background: rgba(43, 31, 15, 0.85);
+            backdrop-filter: blur(8px);
+            border: 2px solid #D4AF37;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+    </style>
+</head>
+<body class="bg-tavern antialiased min-h-screen p-4 md:p-8">
+    <div class="max-w-4xl mx-auto glass-panel p-8 md:p-12 rounded-xl">
+        
+        <!-- Cabeçalho -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-wider">🏺 Loot Antigo</h1>
+            <h2 class="text-2xl text-[#C05E12] font-bold tracking-widest uppercase mb-4">Câmara das Relíquias</h2>
+            <p class="inline-block bg-[#D4AF37] text-[#1E140A] px-3 py-1 rounded font-bold text-sm tracking-widest uppercase shadow-md">
+                Versão 1.29.04
+            </p>
+        </div>
+        
+        <!-- Introdução -->
+        <blockquote class="border-l-4 border-[#C05E12] pl-6 py-3 mb-10 text-lg text-gray-300 bg-black/40 rounded-r-lg italic shadow-inner">
+            Uma experiência imersiva de marketplace RPG com autenticação completa, sistema de postagem de itens e design premium inspirado em jogos AAA.
+        </blockquote>
+
+        <!-- Funcionalidades Principais -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-black/30 p-6 rounded-lg border border-[#3E2F1C]">
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><span class="text-green-500">✅</span> Implementadas</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 marker:text-[#D4AF37]">
+                    <li>Autenticação Completa com Firebase</li>
+                    <li>Sistema de Postagem (Wizard Multi-step)</li>
+                    <li>Dashboard Imersiva com filtros avançados</li>
+                    <li>Carrinho Persistente com controle de estoque</li>
+                    <li>Área "Meus Artefatos"</li>
+                    <li>Backend Customizado (Node.js, Express, MongoDB)</li>
+                    <li>Upload de Imagens Local via Multer</li>
+                    <li>Design Temático Premium responsivo</li>
+                </ul>
+            </div>
+            <div class="bg-black/30 p-6 rounded-lg border border-[#3E2F1C]">
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><span class="text-blue-500">🔜</span> Em Desenvolvimento</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 marker:text-gray-500">
+                    <li>Avaliações e favoritos</li>
+                    <li>Chat entre comprador e vendedor</li>
+                    <li>Perfil do usuário editável</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tecnologias -->
+        <h2 class="text-3xl font-bold mb-6 border-b border-[#D4AF37]/30 pb-3 flex items-center gap-3">
+            <span>🛠️</span> Tecnologias Utilizadas
+        </h2>
+        <div class="overflow-x-auto mb-12 rounded-lg border border-[#D4AF37]/30 shadow-lg">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-[#3E2F1C] text-[#D4AF37] uppercase text-sm tracking-wider">
+                        <th class="p-4 border-b border-[#D4AF37]/30">Tecnologia</th>
+                        <th class="p-4 border-b border-[#D4AF37]/30">Versão</th>
+                        <th class="p-4 border-b border-[#D4AF37]/30">Propósito</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-300 bg-black/20">
+                    <tr class="hover:bg-black/40 transition-colors"><td class="p-4 border-b border-[#3E2F1C]"><strong>React.js</strong></td><td class="p-4 border-b border-[#3E2F1C]">18.3</td><td class="p-4 border-b border-[#3E2F1C]">Biblioteca principal</td></tr>
+                    <tr class="hover:bg-black/40 transition-colors bg-black/10"><td class="p-4 border-b border-[#3E2F1C]"><strong>Node.js</strong></td><td class="p-4 border-b border-[#3E2F1C]">18+</td><td class="p-4 border-b border-[#3E2F1C]">Runtime do Backend e API</td></tr>
+                    <tr class="hover:bg-black/40 transition-colors"><td class="p-4 border-b border-[#3E2F1C]"><strong>Express</strong></td><td class="p-4 border-b border-[#3E2F1C]">4.x</td><td class="p-4 border-b border-[#3E2F1C]">Framework Web</td></tr>
+                    <tr class="hover:bg-black/40 transition-colors bg-black/10"><td class="p-4 border-b border-[#3E2F1C]"><strong>MongoDB</strong></td><td class="p-4 border-b border-[#3E2F1C]">-</td><td class="p-4 border-b border-[#3E2F1C]">Banco de Dados (Mongoose)</td></tr>
+                    <tr class="hover:bg-black/40 transition-colors"><td class="p-4 border-b border-[#3E2F1C]"><strong>Tailwind CSS</strong></td><td class="p-4 border-b border-[#3E2F1C]">3.4</td><td class="p-4 border-b border-[#3E2F1C]">Estilização</td></tr>
+                    <tr class="hover:bg-black/40 transition-colors bg-black/10"><td class="p-4 border-b border-[#3E2F1C]"><strong>Firebase</strong></td><td class="p-4 border-b border-[#3E2F1C]">9.23</td><td class="p-4 border-b border-[#3E2F1C]">Apenas Autenticação</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Nota e Melhorias -->
+        <div class="bg-gradient-to-r from-[#2B1F0F] to-black p-8 rounded-lg border-2 border-[#D4AF37] shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-6xl">🎯</div>
+            <h2 class="text-3xl font-bold mb-4 text-[#D4AF37] relative z-10">Nota Final: <span class="text-white">7.5/10</span></h2>
+            <div class="grid md:grid-cols-2 gap-6 relative z-10 mt-6">
+                <div>
+                    <h4 class="font-bold text-green-400 mb-2 uppercase tracking-widest text-sm">Pontos Positivos</h4>
+                    <ul class="list-none space-y-1 text-gray-300">
+                        <li>✨ Design único e criativo</li>
+                        <li>📜 Código organizado e legível</li>
+                        <li>🔐 Autenticação robusta e integração Mongoose</li>
+                        <li>🎲 UX gamificada engajante</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-red-400 mb-2 uppercase tracking-widest text-sm">Pontos a Melhorar</h4>
+                    <ul class="list-none space-y-1 text-gray-300">
+                        <li>⚠️ Segurança (Centralizar variáveis de ambiente)</li>
+                        <li>⚠️ Gestão de estado centralizada</li>
+                        <li>⚠️ Validações de Formulário mais severas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
